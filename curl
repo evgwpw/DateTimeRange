@@ -1,0 +1,11 @@
+curl -XGET "http://localhost:9200/rshb_message/_search?pretty" -H 'Content-Type: application/json' -d'
+{
+  "size": 10000, 
+  "query": {
+    "term": {
+      "dialog_id": {
+        "value": "0029f81a-ac34-4b8c-987f-dec1a71e604b"
+      }
+    }
+  }
+}'
